@@ -9,11 +9,10 @@ preços de produtos: precos = [100.0, 250.0, 500.0] e uma com o nome: vinhos
 precos = [100.0, 250.0, 500.0]
 vinhos = ["Branco", "Tinto","Champagne"]
 
-nome_vinho = str(input('Nome do produto: ')).strip().lower()
+nome_vinho = str(input('Nome do produto: ')).strip().title()
 novo_preco = float(input('Valor do produto: '))
 
-vinhos.append(nome_vinho)
-precos.append(novo_preco)
+posicao_vinho = vinhos.index(nome_vinho)
+precos[posicao_vinho] = novo_preco
 
-print(f'Vinhos: {vinhos}')
-print(f'Preços: {precos}')
+print(precos)
