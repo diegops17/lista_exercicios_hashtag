@@ -8,7 +8,6 @@ diretamente na estrutura do loop para extrair os três valores e, para cada item
 '''
 vendas_dia = [("Monitor", 900, 2), ("Teclado", 150, 5), ("Mouse", 80, 10)]
 
-for venda in vendas_dia:
-    produto, preco, quantidade = venda
-    
+for produto, preco, quantidade in vendas_dia:
+    #produto, preco, quantidade = venda
     print(f'Produto: {produto} | Total: R${preco * quantidade}.')

@@ -15,5 +15,6 @@ def calcular_folha(salario_bruto):
 
     return (desconto, salario_liquido)
 
-desconto, salario_liquido = calcular_folha(5000)
+salario = 5000
+desconto, salario_liquido = calcular_folha(salario)
 print(f'Desconto: R${desconto} | Salário Líquido: R${salario_liquido}')
